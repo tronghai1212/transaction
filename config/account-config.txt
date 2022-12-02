@@ -1,0 +1,76 @@
+{
+    "config": {
+        "all": 1,
+        "vcb": {
+            "status": 0
+        },
+        "donga": {
+            "status": 0
+        },
+        "acb": {
+            "status": 0
+        },
+        "vtb": {
+            "status": 0
+        },
+        "bidv": {
+            "status": 0
+        },
+        "scb": {
+            "status": 0
+        },
+        "tcb": {
+            "status": 0
+        },
+        "agb": {
+            "status": 0
+        },
+        "vpb": {
+            "status": 0
+        },
+        "vib": {
+            "acc": "0934306775",
+            "pass": "Tgb8868@",
+            "status": 1
+        },
+        "abbank": {
+            "status": 0
+        },
+        "msb": {
+            "status": 0
+        },
+        "mbbank": {
+            "status": 0
+        },
+        "saigonbank": {
+            "status": 0
+        },
+        "shb": {
+            "status": 0
+        },
+        "viettel": {
+            "status": 0
+        },
+        "hdbank": {
+            "status": 0
+        },
+        "tpbank": {
+            "status": 0
+        },
+        "eximbank": {
+            "status": 0
+        },
+        "seabank": {
+            "status": 0
+        },
+        "ocb": {
+            "status": 0
+        },
+        "pvcombank": {
+            "status": 0
+        },
+        "vietbank": {
+            "status": 0
+        }
+    }
+}
