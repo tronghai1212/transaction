@@ -3,6 +3,9 @@ package org.growhack.bank.portal.model;
 import com.google.gson.JsonObject;
 import com.google.gson.annotations.SerializedName;
 import lombok.Data;
+//import org.growhack.bank.portal.entity.TransactionBankRepository;
+//import org.growhack.bank.portal.entity.TransactitonBankEntity;
+import org.growhack.bank.portal.entity.TransactitonBankEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +13,9 @@ import java.io.*;
 
 @Data
 public class Transaction extends Optional implements Serializable, Externalizable {
+
+//    @Autowired
+//    TransactionBankRepository repository;
 
     public static Logger LOG = LoggerFactory.getLogger(Transaction.class);
 
@@ -128,5 +134,7 @@ public class Transaction extends Optional implements Serializable, Externalizabl
         transId = in.readUTF();
 
     }
+
+
 
 }

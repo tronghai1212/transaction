@@ -1,8 +1,10 @@
 package org.growhack.bank.portal.job;
 
 import org.growhack.bank.portal.config.AdminConfig;
+import org.growhack.bank.portal.dao.DBConnection;
 import org.growhack.bank.portal.dao.TransDB;
 import org.growhack.bank.portal.driver.BankDriver;
+import org.growhack.bank.portal.entity.TransactitonBankEntity;
 import org.growhack.bank.portal.model.Transaction;
 import org.growhack.bank.portal.service.BotService;
 import org.growhack.bank.portal.service.UpdateTransactionService;
@@ -196,6 +198,10 @@ public abstract class TransScanner implements Runnable {
                 } else {
                     transDB.updateTransaction(t);
 //                    UpdateTransactionService.updateTransaction(t);
+                    TransactitonBankEntity entity = new TransactitonBankEntity();
+                    entity.convertToTransactionBank(t);
+                    DBConnection connection = new DBConnection();
+                    connection.updateAccount(entity);
                     LOG.info("Add new transaction: " + t);
                 }
             }
